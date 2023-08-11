@@ -1,0 +1,136 @@
+/* ********* 
+
+  BTI225 – Assignment 06
+
+  I declare that this assignment is my own work in accordance with
+  Seneca Academic Policy. No part of this assignment has been
+  copied manually or electronically from any other source
+  (including web sites) or distributed to other students.
+
+  Please update the following with your information:
+
+  Name:       MADHAV RAJPAL
+  Student ID: 112037221
+  Date:       10/08/2023
+ 
+********* */
+
+body{
+    height: 100%;
+}
+
+.hidden{
+    display: none;
+}
+
+#menu{
+    
+    width:auto;
+    height: 40px;
+    background-image: linear-gradient(rgb(66, 4, 66), rgb(154, 128, 156));
+    padding-top: 15px;
+    padding-left: 35%;
+    border-radius: 20px;
+    align-items: center;
+    
+}
+img{
+    width: 200px;
+    height: 180px;
+}
+#navtxt{
+    color: black;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 10px; 
+    font-family: 'Lexend Deca';
+    
+   
+}
+#navtxt:hover{
+    
+    color: white;
+}
+
+#txt{
+    color:white;
+    font-weight: bold;
+}
+
+#cards{
+    width: 190px;
+    height: 300px;
+    background-image: linear-gradient(rgb(66, 4, 66), rgb(154, 128, 156));
+    display: inline-table;
+    transition: transform .2s;
+    padding: 15px;
+    margin: 10px;
+    font-family: 'Lexend Deca';
+    border-radius: 10px;
+    text-align: left;
+   
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#cards:hover{
+    transform: scale(1.1);
+}
+
+#cards:hover .image {
+    opacity: 1;
+  }
+  
+.text {
+    transition: .2s ;
+    background-color: black;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    padding: 17px;
+    opacity: 0;
+    color: white;
+    position: absolute;
+    text-align: center;
+    border-radius: 45%;
+  }
+
+#cards:hover .text {
+    opacity: 0.8;
+  }
+
+  
+
+#card-container{
+    background-color: black;
+    padding:10px
+    
+   
+}
+
+label{
+    font-family: "Lexend Deca";
+    color: white;
+}
+
+input[type=text]{
+    width: 250px;
+    height: 30px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border-bottom: 4px solid purple;
+    padding-left: 10px;
+}
+
+button{
+    background-image: linear-gradient(rgb(66, 4, 66), rgb(154, 128, 156));
+    width: 255px;
+    height: 40px;
+    border-radius: 10px;
+    padding-left: 10px;
+    font-family: "Lexend Deca";
+}

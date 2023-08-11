@@ -1,0 +1,77 @@
+<!-- ********* 
+/* ********* 
+
+  BTI225 – Assignment 06
+
+  I declare that this assignment is my own work in accordance with
+  Seneca Academic Policy. No part of this assignment has been
+  copied manually or electronically from any other source
+  (including web sites) or distributed to other students.
+
+  Please update the following with your information:
+
+  Name:       MADHAV RAJPAL
+  Student ID: 112037221
+  Date:       10/08/2023
+ 
+********* */
+ 
+********* -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- Change this to your name-->
+    <meta name="author" content="Your Name" />
+    <link rel="stylesheet" href="./css/app.css">
+    <link href='https://fonts.googleapis.com/css?family=Lexend Deca' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>BTI225 Music App</title>
+  </head>
+  <body bgcolor="black">
+    <header>
+      <!-- Change this to your App's info -->
+      <center><h1 style="font-family: 'Lexend Deca';color: white;">MELODIFY.mp3 &#127925  </h1></center>
+      <center><p style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;color: white;">Play, Pause, Repeat but the party never ends. Melodies for all</p></center>
+    </header>
+
+    <nav id="menu">
+      <!-- Dynamically create your menu buttons here (1 for each artist) -->
+    </nav>
+
+    <main>
+      <h2 id="selected-artist">
+        <!-- Dynamically update using the selected artist's information (name & links) -->
+      </h2>
+
+      <center><div id="card-container">
+       <!-- Dynamically update the cards to show 1 card per song for the selected artist-->
+
+      </div></center>
+
+      <div id= "forms">
+        <center>
+          <form id="songForm" class="hidden">
+            <h2 style="color: white;font-family: Lexend Deca;">Edit Song</h2>
+            <input type="hidden" id="songId">
+            <input type="hidden" id="artistId">
+            <label for="title">Title:</label><br>
+            <input type="text" id="title"><br><br>
+            <label for="year">Year:</label><br>
+            <input type="text" id="year"><br><br>
+            <label for="duration">Duration:</label><br>
+            <input type="text" id="duration"><br><br><br>
+            <button type="submit">Update the song</button><br><br>
+          </form>
+        </center>
+      </div>
+    </main>
+
+    <!-- JavaScript Data Files -->
+    <script src="./js/artists.js"></script>
+    <script src="./js/songs.js"></script>
+
+    <!-- Main App JavaScript File -->
+    <script src="./js/app.js"></script>
+  </body>
+</html>
